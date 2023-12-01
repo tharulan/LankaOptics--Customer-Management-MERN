@@ -19,3 +19,5 @@ Transitioning to the frontend is equally seamless:
 **Navigate and Install:** Journey to the frontend directory and invoke `npm install` to effortlessly install all the essential packages.
 
 **Startup Frontend:** Once the installation concludes, elevate your frontend experience by launching the application with the straightforward command: `npm start`.
+
+# Screen play
