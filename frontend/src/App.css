@@ -1,0 +1,420 @@
+html,
+body {
+  font-family: "Optics Ember";
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar-track {
+  background-color: #cff1ff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #cff1ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(66, 66, 66, 0.2);
+  border: 0px;
+  background-clip: padding-box;
+  border-radius: 5px;
+}
+
+nav {
+  background-color: #145374;
+  padding: 1rem 1rem;
+}
+
+#search_btn {
+  background-color: #69cafe;
+}
+
+.input-group {
+  width: 90%;
+  margin-right: 35%;
+}
+
+#search_field {
+  height: 2.4rem;
+  padding: 1rem;
+}
+
+#login_btn,
+#view_btn {
+  background-color: #66caff;
+  padding: 0.4rem 1.8rem;
+  font-family: calibri;
+}
+
+#cart {
+  font-size: 1rem;
+  color: white;
+}
+
+#cart_count {
+  background-color: #66caff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  color: black;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Home page */
+
+
+
+#view_btn {
+  background-color: #66caff;
+  color: white;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+  margin-top: 8rem;
+  color: grey;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Loader */
+.loader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  width: 80px;
+  height: 80px;
+  padding-left: 0;
+}
+.loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #66caff;
+  border-color: #66caff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Login & Register */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+
+  font-weight: 700;
+}
+
+.wrapper form {
+  padding: 2.5rem 3rem;
+}
+
+.wrapper form .btn {
+  background-color: #66caff;
+  border-color: #66caff;
+  color: white;
+  margin-top: 2.5rem;
+}
+
+.wrapper form a {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+/* Avatar */
+.avatar {
+  display: inline-block;
+  margin-bottom: 0;
+  height: 3rem;
+  width: 3rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* Header User Profile */
+
+.avatar-nav {
+  margin-right: 0.6rem;
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+
+/* User Profile */
+
+.avatar-profile {
+  height: 16rem;
+  width: 16rem;
+}
+
+.user-info h4 {
+  font-weight: 800;
+  color: grey;
+  margin-top: 2rem;
+}
+
+.user-info p {
+  font-size: 1.1rem;
+}
+
+#edit_profile {
+  background-color: #66caff;
+  border-color: #66caff;
+}
+
+
+
+/* Pagination */
+.page-item.active .page-link {
+  background-color: #66caff;
+  border-color: #66caff;
+}
+
+.page-link {
+  color: #66caff;
+}
+
+.page-link:hover {
+  color: #66caff;
+}
+
+/* Admin Sidebar */
+
+.sidebar-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  min-height: 100vh;
+  font-weight: normal;
+
+  margin-top: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+#sidebar {
+  min-width: 100%;
+  max-width: 100%;
+  background: #000000;
+  color: #fff;
+  transition: all 0.3s;
+}
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #000000;
+}
+#sidebar ul.components {
+  padding: 5px 0px;
+  border-bottom: 1px solid #000000;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+#sidebar ul li a:hover {
+  color: #000000;
+  background: #fff;
+}
+
+#sidebar ul li div.dropdown-menu a {
+  color: black;
+}
+
+#sidebar ul li a i {
+  margin-right: 0.3rem;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #000000;
+}
+a[data-toggle="collapse"] {
+  position: relative;
+}
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 1rem !important;
+  padding-left: 30px !important;
+  background: #000000;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Dashboard */
+
+.card-font-size {
+  font-size: 1.5rem;
+}
+
+
+
+/* Styles for the loader-container */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Adjust the height as needed */
+}
+
+/* Styles for the datatable-container */
+.datatable-container {
+    margin: 10px 10px 10px -23px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #e3e4e4; /* Background color for the container */
+}
+
+.datatable-container .mdb-datatable {
+    width: 100%; /* Make the DataTable fill the container */
+}
+
+.datatable-container .mdb-datatable thead th {
+    background-color: #3498db; /* Header background color */
+    color: #fff; /* Header text color */
+    border-color: #2980b9; /* Header border color */
+}
+
+.datatable-container .mdb-datatable tbody tr:hover {
+    background-color: #f2f2f2; /* Hover background color for rows */
+}
+
+.datatable-container .mdb-datatable tbody td {
+    border-color: #000000; /* Border color for table cells */
+}
+
+.user-box {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 140, 179, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  
+}
+.user-box:hover {
+  background-color: #dce5ea;
+  transition: background-color 0.3s;
+}
+
+.user-info {
+  margin-top: 20px;
+}
+
+.user-info p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #000000;
+}
+
+.user-info p strong {
+  font-weight: bold;
+  color: #555;
+}
+
+h1 {
+  font-size: 24px;
+  color: #002530;
+}
+
+/* You can add transitions for hover effects */
+.user-info p:hover {
+  background-color: #ddd;
+  transition: background-color 0.3s;
+}
+
+.download-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.download-button:hover {
+  background-color: #217dbb;
+}
+
+.download-button-container {
+  text-align: center;
+}
+
