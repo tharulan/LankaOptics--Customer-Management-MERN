@@ -13,7 +13,6 @@ const auth = require("./routes/auth");
 
 app.use("/api/v1/", auth);
 
-
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/build")));
   app.get("*", (req, res) => {
