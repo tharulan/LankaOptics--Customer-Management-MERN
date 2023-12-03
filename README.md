@@ -17,6 +17,8 @@ Transitioning to the frontend is equally seamless:
 **Navigate and Install:** Journey to the frontend directory and invoke `npm install` to effortlessly install all the essential packages.
 
 **Startup Frontend:** Once the installation concludes, elevate your frontend experience by launching the application with the straightforward command: `npm start`.
+
+---
 #### Technologies used 
 
 MERN stack is what we used to develop this project. 
@@ -28,6 +30,8 @@ MERN stack is what we used to develop this project.
 3. React – It’s a JavaScript library for UI development that Developers may easily construct dynamic, interactive UIs.
 
 4. Node.js - A JavaScript runtime environment that gives programmers access to server-side execution of JavaScript.
+
+---
 
 # Screen play
 <p align="center">
